@@ -8,8 +8,11 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:component": {
+          "style": "scss"
         }
-      },
+      },      
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -28,9 +31,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css"        
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -122,7 +127,127 @@
           }
         }
       }
+    },
+    "navbar": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/navbar",
+      "sourceRoot": "projects/navbar/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/navbar",
+            "index": "projects/navbar/src/index.html",
+            "main": "projects/navbar/src/main.ts",
+            "polyfills": "projects/navbar/src/polyfills.ts",
+            "tsConfig": "projects/navbar/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/navbar/src/favicon.ico",
+              "projects/navbar/src/assets"
+            ],
+            "styles": [
+              "projects/navbar/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/navbar/src/environments/environment.ts",
+                  "with": "projects/navbar/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "navbar:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "navbar:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "navbar:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/navbar/src/test.ts",
+            "polyfills": "projects/navbar/src/polyfills.ts",
+            "tsConfig": "projects/navbar/tsconfig.spec.json",
+            "karmaConfig": "projects/navbar/karma.conf.js",
+            "assets": [
+              "projects/navbar/src/favicon.ico",
+              "projects/navbar/src/assets"
+            ],
+            "styles": [
+              "projects/navbar/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/navbar/tsconfig.app.json",
+              "projects/navbar/tsconfig.spec.json",
+              "projects/navbar/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/navbar/e2e/protractor.conf.js",
+            "devServerTarget": "navbar:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "navbar:serve:production"
+            }
+          }
+        }
+      }
     }
-  },
+  },  
   "defaultProject": "Sinclair"
 }

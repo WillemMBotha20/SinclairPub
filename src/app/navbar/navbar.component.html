@@ -1,0 +1,65 @@
+        <nav class="navbar navbar-expand-sm navbar-light" id="nav">
+          <img src="assets/images/logo.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} logo1"
+            alt="Image not found">
+          <img src="assets/images/logo2.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} logo2"
+            alt="Image not found">
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId" style="justify-content: right;">
+            <div class="alignright">
+              <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#homeid">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#visionandmission">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicesid">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <script>
+          $(document).ready(function () {
+            var sections = $('section');
+            var navbar = $('#nav');
+            var navbarHeight = navbar.height();
+
+            var sectionOffset = [];
+
+            sections.each(function () {
+              var section = $(this);
+
+              var position = section.offset().top - navbarHeight;
+              var backgroundColor = section.css("background-color");
+
+              sectionOffset.push({
+                'postion': position,
+                'color': backgroundColor
+              });
+
+            });
+
+            $(window).on('scroll', function () {
+              var scrollPos = $(document).scrollTop();
+
+              $.each(sectionOffset, function (index, section) {
+                if (scrollPos >= section.postion) {
+                  navbar.css("background-color", section.color);
+                }
+              })
+            });
+
+          });
+
+        </script>

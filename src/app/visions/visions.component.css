@@ -1,0 +1,111 @@
+#boxshort {
+  height: 11rem;
+  background-color: #e1e1e1;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#boxlong {
+  height: 11rem;
+  background-color: #e1e1e1;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.text1 {
+  float: right;
+  color: white;
+  font-size: 3rem;
+}
+
+.text2 {
+  float: left;
+  font-size: 3rem;
+}
+
+.image {
+  background-image: url("/assets/images/figure.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#boxlong:hover {
+  background-color: #9b2350;
+  color: white;
+}
+
+#boxshort:hover {
+  background-color: #9b2350;
+  color: white;
+}
+
+@media screen and (min-width: 320px)and (max-width: 480px) {
+  .pc {
+    display: none;   
+  }
+
+  .text {
+    text-align: center;
+    color: white;
+    font-size: 2rem; 
+  }
+
+  .mob{
+    margin-bottom: 2rem;
+
+  }
+
+  .image {
+    background-image: none;   
+  }
+}
+
+@media screen and (min-width: 481px)and (max-width: 768px) {
+  .pc {
+    display: none;   
+  }
+
+  .text {
+    text-align: center;
+    color: white;
+    font-size: 2rem; 
+  }
+
+  .mob{
+    margin-bottom: 2rem;
+
+  }
+
+  .image {
+    background-image: none;   
+  }
+}
+
+@media screen and (min-width: 769px)and (max-width: 1200px) {
+  .mob {
+    display: none;
+    text-align: center;   
+  } 
+
+  .image {
+    background-image: none;   
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1470px) {
+  .mob {
+    display: none;
+    text-align: center;
+  } 
+}
+
+@media screen and (min-width: 1471px){
+  .mob {
+    display: none;
+    text-align: center;
+  } 
+}
+

@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+}
+
+.para {
+  /* The image used */
+  background-image: url("src/assets/images/contact.png");
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-top: 7rem;
+
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  color: white;
+  font-size: 5rem;
+}
+
+.footerc {
+  background-color: #e1e1e1;
+  height: 4rem;
+}
+
+.center {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-fluid {
+  width: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: right;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+}
+
+.leftheading {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  text-align: center;
+  color: black;
+}
+
+.text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: auto;
+  color: black;
+}
+
+.remove{
+  text-decoration: none;
+  color: black
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .pc {
+    display: none;
+  }
+
+  .leftheading {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    color: black;
+  }
+  .cen {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+
+  .leftheading {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    color: black;
+  }
+  .cen {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .mob {
+    display: none;
+  }
+
+  .leftheading {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    text-align: center;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1470px) {
+  .mob {
+    display: none;
+  }
+
+  .leftheading {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    text-align: center;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1471px) {
+  .mob {
+    display: none;
+  }
+}

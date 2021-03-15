@@ -1,0 +1,84 @@
+.homeimg {
+  background-image: url("/assets/images/homeimage.jpg");
+  height: 58rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.text{
+  padding: 0;
+  margin: auto;
+}
+
+.box {
+  width: 50em;
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 30rem;
+} 
+
+.headingtext {
+  padding-top: 13rem;
+  font-size: 4rem;    
+}
+
+.stripe {
+  background-color: #9b2350;
+  width: 100%;
+  height: 2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .headingtext {
+    padding-top: 8rem;
+    font-size: 3rem;
+  }
+
+  .box {
+    width: 50em;
+    font-size: 0.5rem;
+    margin: auto;
+    margin-top: 24rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .headingtext {
+    padding-top: 13rem;
+    font-size: 3rem;
+  }
+
+  .box {
+    width: 50em;
+    font-size: 0.6rem;
+    margin: auto;
+    margin-top: 26rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .box {
+    width: 50em;
+    font-size: 0.8rem;
+    margin: auto;
+    margin-top: 22rem;
+  }
+
+  .headingtext {
+    padding-top: 13rem;
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1470px) {  
+  
+  .box {
+    width: 50em;
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 25rem;
+  } 
+}
