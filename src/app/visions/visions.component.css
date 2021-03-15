@@ -4,6 +4,7 @@
   text-align: center;
   border-radius: 0.5rem;
   padding: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #boxlong {
@@ -12,17 +13,20 @@
   text-align: center;
   border-radius: 0.5rem;
   padding: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .text1 {
   float: right;
   color: white;
   font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .text2 {
   float: left;
   font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .image {
