@@ -18,11 +18,17 @@ body{
     font-size: 5rem;
     color: #9b2350;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 4rem;
 }
 
 .center{
     text-align: center;
     justify-content: center;  
+}
+
+.container-fluid{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 320px)and (max-width: 480px) {
@@ -46,5 +52,6 @@ body{
     }
   }
 
+  
 
 

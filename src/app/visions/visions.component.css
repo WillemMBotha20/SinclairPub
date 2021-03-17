@@ -34,6 +34,8 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
 #boxlong:hover {
