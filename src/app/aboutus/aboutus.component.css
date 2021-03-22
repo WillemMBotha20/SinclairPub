@@ -5,7 +5,7 @@ body {
 .middlebar {
   background-color: #9b2350;
   color: white;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 4rem;
   text-align: center;
 }
@@ -24,6 +24,9 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.2rem;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .boxempty {
@@ -51,6 +54,9 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.2rem;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -75,10 +81,13 @@ body {
     font-size: 1.2rem;
     padding: 1rem;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .pc {
     display: none;
   }
@@ -91,11 +100,14 @@ body {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
-    padding: 1rem;    
+    padding: 1rem;
     margin: auto;
     margin-top: 2rem;
-  } 
-  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (min-width: 481px)and (max-width: 768px) {
@@ -111,11 +123,14 @@ body {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.2rem;
-    padding: 1rem;    
+    padding: 1rem;
     margin: auto;
     margin-top: 2rem;
-  } 
-  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (min-width: 769px)and (max-width: 1200px) {
@@ -131,10 +146,13 @@ body {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.2rem;
-    padding: 1rem;    
+    padding: 1rem;
     margin: auto;
     margin-top: 2rem;
-  } 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1470px) {

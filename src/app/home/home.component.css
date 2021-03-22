@@ -39,8 +39,8 @@
   }
 
   .box {
-    width: 30em;
-    font-size: 0.6rem;
+    width: 20rem;
+    font-size: 0.8rem;
     margin: auto;
     margin-top: 24rem;
   }
@@ -53,16 +53,16 @@
   }
 
   .box {
-    width: 50em;
-    font-size: 0.6rem;
+    width: 25rem;
+    font-size: 0.9rem;
     margin: auto;
-    margin-top: 26rem;
+    margin-top: 23rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .box {
-    width: 50em;
+    width: 50rem;
     font-size: 0.8rem;
     margin: auto;
     margin-top: 22rem;
