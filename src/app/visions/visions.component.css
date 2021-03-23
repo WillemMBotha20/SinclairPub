@@ -5,6 +5,7 @@
   border-radius: 0.5rem;
   padding: 1rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,6 +17,7 @@
   text-align: center;
   border-radius: 0.5rem;
   padding: 1rem;
+  font-size: 1rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   justify-content: center;
